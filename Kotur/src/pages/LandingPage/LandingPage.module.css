@@ -14,7 +14,7 @@
 	top: 27%; /* Adjust to vertically center */
 	left: 70%; /* Adjust to horizontally center */
 	transform: translate(-50%, -50%); /* Center the logo exactly */
-	z-index: 10;
+	z-index: 1;
 	animation: rotate360 5s linear infinite;
 }
 
