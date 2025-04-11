@@ -1,0 +1,50 @@
+.hero {
+	background-image: url("/images/landingPageImages/image000651.png");
+	height: 100vh;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
+}
+
+.hero img {
+	width: 130px;
+	height: 130px;
+	position: absolute;
+	top: 27%; /* Adjust to vertically center */
+	left: 70%; /* Adjust to horizontally center */
+	transform: translate(-50%, -50%); /* Center the logo exactly */
+	z-index: 10;
+	animation: rotate360 5s linear infinite;
+}
+
+@keyframes rotate360 {
+	0% {
+		transform: translate(-50%, -50%) rotate(0deg);
+	}
+	100% {
+		transform: translate(-50%, -50%) rotate(360deg);
+	}
+}
+
+@media (max-width: 425px) {
+	.hero {
+		background-size: 200% 100%;
+	}
+}
+
+@media (min-width: 426px) {
+	.hero img {
+		width: 150px;
+		height: 150px;
+		left: 60%;
+	}
+}
+
+@media (min-width: 769px) {
+	.hero img {
+		width: 180px;
+		height: 180px;
+		left: 58%;
+	}
+}
