@@ -1,11 +1,50 @@
-.containerKlasa {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  padding: 20px;
+.hero {
+  background-image: url("/images/gallery-page/gallery-banner.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 80vh;
 }
 
-.klasa {
-  color: red;
+.galleryPage img {
+  width: 95%;
+  height: 100%;
+  object-fit: cover;
+  scroll-snap-align: start;
+}
+
+.bgDark {
+  background-color: #080606;
+}
+.scrollContainer {
+  display: flex;
+  animation: scrollLeft 20s linear infinite;
+  gap: 1rem;
+}
+.infiniteScroll {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+}
+.scrollContainer:hover {
+  animation-play-state: paused;
+}
+.scrollContainer:hover img:hover {
+  animation-play-state: paused;
+  transition: all 0.3s ease-in-out;
+  transform: scale(1.05);
+}
+
+@keyframes scrollLeft {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+button:hover {
+  background-color: hsl(90, 10%, 65%) !important;
 }
