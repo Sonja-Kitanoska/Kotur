@@ -84,6 +84,19 @@
 	transform: translateY(-8px) rotate(-45deg);
 }
 
+/* Footer */
+
+.footer {
+	display: flex;
+	flex-direction: column;
+}
+
+/* Helper styles */
+
+.color-lightgray {
+	color: #aaaaaa;
+}
+
 /* Media queries */
 @media (max-width: 425px) {
 	.navbar-collapse.show {
@@ -94,5 +107,13 @@
 	.navbar-collapse.show .nav-link {
 		text-decoration: none;
 		margin-bottom: 3px;
+	}
+}
+
+@media (min-width: 426px) {
+	.footer {
+		flex-direction: row;
+		justify-content: center;
+		gap: 10px;
 	}
 }
