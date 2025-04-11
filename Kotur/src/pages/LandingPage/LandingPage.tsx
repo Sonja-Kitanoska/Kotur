@@ -1,5 +1,4 @@
 import styles from "./LandingPage.module.css";
-
 const LandingPage = () => {
 	return (
 		<div className={styles.hero}>
