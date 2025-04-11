@@ -1,16 +1,21 @@
 import { Outlet } from "react-router-dom";
 import Navbar from "../../components/Navbar";
 import Footer from "../../components/Footer";
+import "./Layout.css";
 
 const Layout = () => {
 	return (
-		<>
-			<Navbar />
-			<main>
+		<div className="d-flex flex-column min-vh-100">
+			<header>
+				<Navbar />
+			</header>
+			<main className="flex-grow-1">
 				<Outlet />
 			</main>
-			<Footer />
-		</>
+			<footer>
+				<Footer />
+			</footer>
+		</div>
 	);
 };
 
