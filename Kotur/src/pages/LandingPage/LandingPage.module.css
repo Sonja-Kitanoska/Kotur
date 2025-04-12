@@ -18,6 +18,35 @@
 	animation: rotate360 5s linear infinite;
 }
 
+.recommendation {
+	background-image: url("/images/landingPageImages/Artboard_1 1.png");
+	height: 80vh;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
+}
+
+.leftContent {
+	width: 35%;
+	position: absolute;
+	top: 50%;
+	left: 5%;
+	font-size: 12px;
+	text-align: center;
+	font-weight: semibold;
+}
+
+.rightContent {
+	width: 35%;
+	position: absolute;
+	top: 50%;
+	left: 60%;
+	font-size: 12px;
+	text-align: center;
+	font-weight: semibold;
+}
+
 @keyframes rotate360 {
 	0% {
 		transform: translate(-50%, -50%) rotate(0deg);
@@ -46,5 +75,22 @@
 		width: 180px;
 		height: 180px;
 		left: 58%;
+	}
+
+	.rightContent,
+	.leftContent {
+		width: 30%;
+		font-size: 25px;
+	}
+}
+
+@media (min-width: 1200px) {
+	.rightContent,
+	.leftContent {
+		width: 30%;
+		font-size: 30px;
+	}
+	.rightContent {
+		left: 65%;
 	}
 }

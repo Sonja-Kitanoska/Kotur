@@ -11,6 +11,22 @@ const LandingPage = () => {
 				</div>
 			</div>
 
+			{/* RECOMMENDATION SECTION */}
+			<div className={styles.recommendation}>
+				<div>
+					<div className={styles.leftContent}>
+						<p style={{ color: "#C0C6BA" }} className="text-uppercase">
+							Оcвежете го вашиот ден со нашиот коктел на денот!
+						</p>
+					</div>
+					<div className={styles.rightContent}>
+						<p style={{ color: "#C0C6BA" }} className="text-uppercase">
+							Дневно уживање во секоја чаша – пробајте го денешниот коктел!
+						</p>
+					</div>
+					<div></div>
+				</div>
+			</div>
 			{/* TESTIMONIALS */}
 			<div className="container py-5 d-flex flex-column justify-content-center align-items-center">
 				<div style={{ width: "50px", height: "30px" }}>
