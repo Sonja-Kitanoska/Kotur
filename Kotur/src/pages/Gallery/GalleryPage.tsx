@@ -17,42 +17,42 @@ const GalleryPage = () => {
           <div className="col-lg-9 col-12 mt-5 mt-lg-0 d-flex flex-row justify-content-center align-items-center">
             <div className={`${styles.infiniteScroll} h-100`}>
               <div className={`${styles.scrollContainer} h-100`}>
-                <div className="col-md-4 col-6 mb-4 h-100">
+                <div className="col-md-5 col-12 mb-4 h-100">
                   <img
                     src="/images/gallery-page/img1.jpg"
                     alt="Gallery Image 1"
                     className={styles.image}
                   />
                 </div>
-                <div className="col-md-4 col-6 mb-4 h-100">
+                <div className="col-md-5 col-12 mb-4 h-100">
                   <img
                     src="/images/gallery-page/img2.jpg"
                     alt="Gallery Image 2"
                     className={styles.image}
                   />
                 </div>
-                <div className="col-md-4 col-6 mb-4 h-100">
+                <div className="col-md-5 col-12 mb-4 h-100">
                   <img
                     src="/images/gallery-page/img3.jpg"
                     alt="Gallery Image 3"
                     className={styles.image}
                   />
                 </div>
-                <div className="col-md-4 col-6 mb-4 h-100">
+                <div className="col-md-5 col-12 mb-4 h-100">
                   <img
                     src="/images/gallery-page/img1.jpg"
                     alt="Gallery Image 1"
                     className={styles.image}
                   />
                 </div>
-                <div className="col-md-4 col-6 mb-4 h-100">
+                <div className="col-md-5 col-12 mb-4 h-100">
                   <img
                     src="/images/gallery-page/img2.jpg"
                     alt="Gallery Image 2"
                     className={styles.image}
                   />
                 </div>
-                <div className="col-md-4 col-6 mb-4 h-100">
+                <div className="col-md-5 col-12 mb-4 h-100">
                   <img
                     src="/images/gallery-page/img3.jpg"
                     alt="Gallery Image 3"
@@ -77,42 +77,42 @@ const GalleryPage = () => {
           <div className="col-lg-9 col-12 mt-5 mt-lg-0 d-flex flex-row justify-content-center align-items-center">
             <div className={`${styles.infiniteScroll} h-100`}>
               <div className={`${styles.scrollContainer} h-100`}>
-                <div className="col-md-4 col-6 mb-4 h-100">
+                <div className="col-md-5 col-12  mb-4 h-100">
                   <img
                     src="/images/gallery-page/img4.jpg"
                     alt="Gallery Image 1"
                     className={styles.image}
                   />
                 </div>
-                <div className="col-md-4 col-6 mb-4 h-100">
+                <div className="col-md-5 col-12  mb-4 h-100">
                   <img
                     src="/images/gallery-page/img5.jpg"
                     alt="Gallery Image 2"
                     className={styles.image}
                   />
                 </div>
-                <div className="col-md-4 col-6 mb-4 h-100">
+                <div className="col-md-5 col-12  mb-4 h-100">
                   <img
                     src="/images/gallery-page/img6.jpg"
                     alt="Gallery Image 3"
                     className={styles.image}
                   />
                 </div>
-                <div className="col-md-4 col-6 mb-4 h-100">
+                <div className="col-md-5 col-12  mb-4 h-100">
                   <img
                     src="/images/gallery-page/img4.jpg"
                     alt="Gallery Image 1"
                     className={styles.image}
                   />
                 </div>
-                <div className="col-md-4 col-6 mb-4 h-100">
+                <div className="col-md-5 col-12  mb-4 h-100">
                   <img
                     src="/images/gallery-page/img5.jpg"
                     alt="Gallery Image 2"
                     className={styles.image}
                   />
                 </div>
-                <div className="col-md-4 col-6 mb-4 h-100">
+                <div className="col-md-5 col-12  mb-4 h-100">
                   <img
                     src="/images/gallery-page/img6.jpg"
                     alt="Gallery Image 3"
@@ -133,42 +133,42 @@ const GalleryPage = () => {
           <div className="col-lg-9 col-12 mt-5 mt-lg-0 d-flex flex-row justify-content-center align-items-center ">
             <div className={`${styles.infiniteScroll} h-100`}>
               <div className={`${styles.scrollContainer} h-100`}>
-                <div className="col-md-4 col-6 mb-4 h-100">
+                <div className="ccol-md-5 col-12 mb-4 h-100">
                   <img
                     src="/images/gallery-page/img8.jpg"
                     alt="Gallery Image 1"
                     className={styles.image}
                   />
                 </div>
-                <div className="col-md-4 col-6 mb-4 h-100">
+                <div className="ccol-md-5 col-12 mb-4 h-100">
                   <img
                     src="/images/gallery-page/img9.jpg"
                     alt="Gallery Image 2"
                     className={styles.image}
                   />
                 </div>
-                <div className="col-md-4 col-6 mb-4 h-100">
+                <div className="ccol-md-5 col-12 mb-4 h-100">
                   <img
                     src="/images/gallery-page/img10.jpg"
                     alt="Gallery Image 3"
                     className={styles.image}
                   />
                 </div>
-                <div className="col-md-4 col-6 mb-4 h-100">
+                <div className="ccol-md-5 col-12 mb-4 h-100">
                   <img
                     src="/images/gallery-page/img8.jpg"
                     alt="Gallery Image 1"
                     className={styles.image}
                   />
                 </div>
-                <div className="col-md-4 col-6 mb-4 h-100">
+                <div className="ccol-md-5 col-12 mb-4 h-100">
                   <img
                     src="/images/gallery-page/img9.jpg"
                     alt="Gallery Image 2"
                     className={styles.image}
                   />
                 </div>
-                <div className="col-md-4 col-6 mb-4 h-100">
+                <div className="ccol-md-5 col-12 mb-4 h-100">
                   <img
                     src="/images/gallery-page/img10.jpg"
                     alt="Gallery Image 3"
@@ -181,7 +181,7 @@ const GalleryPage = () => {
         </div>
       </div>
       <button
-        className={`${styles.customBtn} d-flex align-items-center justify-content-center mx-auto my-5`}
+        className={`${styles.customBtn}btn d-flex align-items-center justify-content-center mx-auto my-5`}
       >
         Види повеќе
       </button>

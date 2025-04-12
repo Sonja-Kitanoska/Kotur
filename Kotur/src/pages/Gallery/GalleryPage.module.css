@@ -19,7 +19,7 @@
 }
 .scrollContainer {
   display: flex;
-  animation: scrollLeft 20s linear infinite;
+  animation: scrollLeft 8s linear infinite;
   gap: 1rem;
 }
 .infiniteScroll {
