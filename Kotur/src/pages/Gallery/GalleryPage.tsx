@@ -5,7 +5,9 @@ const GalleryPage = () => {
     <div className={styles.galleryPage}>
       <div className={styles.hero}> </div>
       <h1 className="text-center text-white my-5">Поминати настани</h1>
-
+      {/* {event.map((event) => {
+        <PastEvent event={event} key={event.id} />;
+      })} */}
       <div className={`container-fluid ${styles.bgDark} my-5 py-5`}>
         <div className="row text-white p-5">
           <div className="col-lg-3 col-12 d-flex flex-column justify-content-center  text-center text-lg-start">
@@ -178,7 +180,7 @@ const GalleryPage = () => {
           </div>
         </div>
       </div>
-      <button className="btn btn-light btn-lg fs-3 px-5 py-3 d-flex align-items-center justify-content-center mx-auto my-5">
+      <button className="btn btn-light btn-lg fs-3 px-lg-5 py-lg-3  d-flex align-items-center justify-content-center mx-auto my-5">
         Види повеќе
       </button>
     </div>
