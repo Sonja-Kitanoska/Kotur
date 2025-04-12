@@ -5,15 +5,15 @@ const MenuPage = () => {
       <div className={`${styles.menuBanner}`}>
         <div className="container">
           <div className="row justify-content-center align-items-center h-100 mt-md-5 pt-md-5">
-            <div className="col-lg-4 col-12 text-white d-flex  flex-column   justify-content-center align-items-lg-start align-items-center  ps-lg-5 px-4 mt-5 mt-sm-0  mb-lg-0 ">
-              <h2 className="pb-4 text-center ps-5  ">МЕНИ</h2>
-              <p className="ps-5 ">
+            <div className="col-lg-5 col-12 text-white d-flex  flex-column   justify-content-center align-items-lg-start align-items-center  ps-lg-5 px-4 mt-5 mt-sm-0  mb-lg-0 ">
+              <h2 className="pb-4 ">МЕНИ</h2>
+              <p className="  text-lg-start">
                 Lorem ipsum dolor sit amet consectetur, adipisicing elit.
                 Provident nesciunt omnis deleniti odit ducimus. Lorem ipsum
                 dolor sit, amet consectetur adipisicing elit. Voluptas, id.
               </p>
             </div>
-            <div className="col-lg-8 col-12 d-flex justify-content-center gap-2    align-items-center  ">
+            <div className="col-lg-7 col-12 d-flex justify-content-center gap-2    align-items-center  ">
               <div className={`${styles.bannerCard}`}>
                 <a
                   href="https://www.instagram.com/koturkafeifilm/?hl=en"

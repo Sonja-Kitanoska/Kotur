@@ -15,38 +15,25 @@
 }
 
 .bgDark {
-  background-color: #080606;
+  background-image: url("/images/menu-page/bg-img.png");
+  background-size: cover;
+  background-position: center;
 }
 .scrollContainer {
   display: flex;
-  animation: scrollLeft 8s linear infinite;
   gap: 1rem;
-}
-.infiniteScroll {
-  overflow: hidden;
-  position: relative;
-  width: 100%;
-}
-.scrollContainer:hover {
-  animation-play-state: paused;
-}
-.scrollContainer:hover img:hover {
-  animation-play-state: paused;
-  transition: all 0.3s ease-in-out;
-  transform: scale(1.05);
+  overflow-x: auto;
+  overflow-y: hidden;
+  white-space: nowrap;
+  scroll-behavior: smooth;
+  scrollbar-width: none;
 }
 
-@keyframes scrollLeft {
-  0% {
-    transform: translateX(0);
-  }
-  100% {
-    transform: translateX(-50%);
-  }
+.scrollContainer::-webkit-scrollbar {
+  display: none;
 }
-
 button:hover {
-  background-color: hsl(90, 10%, 65%) !important;
+  background-color: rgb(213, 216, 211);
 }
 
 .customBtn {
