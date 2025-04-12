@@ -3,55 +3,57 @@ const MenuPage = () => {
   return (
     <>
       <div className={`${styles.menuBanner}`}>
-        <div className="row justify-content-center align-items-center h-100">
-          <div className="col-lg-4 col-12 text-white d-flex  flex-column   justify-content-center align-items-lg-start align-items-center   ps-lg-5 px-4 mt-5 mb-lg-0">
-            <h2 className="pb-4 text-center ps-5  ">МЕНИ</h2>
-            <p className="w-50 ps-5 ">
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-              Provident nesciunt omnis deleniti odit ducimus. Lorem ipsum dolor
-              sit, amet consectetur adipisicing elit. Voluptas, id.
-            </p>
-          </div>
-          <div className="col-lg-8  col-12  d-flex justify-content-center   align-items-center  ">
-            <div className={`${styles.bannerCard}`}>
-              <a
-                href="https://www.instagram.com/koturkafeifilm/?hl=en"
-                target="_blank"
-                rel="noopener noreferrer"
-                className={`${styles.bannerLink}`}
-              >
-                <img src="./images/menu-page/img1.jpg" alt="Menu item 1" />
-                <i className={`${styles.iconLink} bi bi-instagram`}></i>
-              </a>
+        <div className="container">
+          <div className="row justify-content-center align-items-center h-100 mt-md-5 pt-md-5">
+            <div className="col-lg-4 col-12 text-white d-flex  flex-column   justify-content-center align-items-lg-start align-items-center  ps-lg-5 px-4 mt-5 mt-sm-0  mb-lg-0 ">
+              <h2 className="pb-4 text-center ps-5  ">МЕНИ</h2>
+              <p className="ps-5 ">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Provident nesciunt omnis deleniti odit ducimus. Lorem ipsum
+                dolor sit, amet consectetur adipisicing elit. Voluptas, id.
+              </p>
             </div>
-            <div className={`${styles.bannerCard}`}>
-              <a
-                href="https://www.instagram.com/koturkafeifilm/?hl=en"
-                target="_blank"
-                rel="noopener noreferrer"
-                className={`${styles.bannerLink}`}
-              >
-                <img src="./images/menu-page/img2.jpg" alt="Menu item 2" />
-                <i className={`${styles.iconLink} bi bi-instagram`}></i>
-              </a>
-            </div>
-            <div className={`${styles.bannerCard}`}>
-              <a
-                href="https://www.instagram.com/koturkafeifilm/?hl=en"
-                target="_blank"
-                rel="noopener noreferrer"
-                className={`${styles.bannerLink}`}
-              >
-                <img src="./images/menu-page/img3.jpg" alt="Menu item 3" />
-                <i className={`${styles.iconLink} bi bi-instagram`}></i>
-              </a>
+            <div className="col-lg-8 col-12 d-flex justify-content-center gap-2    align-items-center  ">
+              <div className={`${styles.bannerCard}`}>
+                <a
+                  href="https://www.instagram.com/koturkafeifilm/?hl=en"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className={`${styles.bannerLink}`}
+                >
+                  <img src="./images/menu-page/img1.jpg" alt="Menu item 1" />
+                  <i className={`${styles.iconLink} bi bi-instagram`}></i>
+                </a>
+              </div>
+              <div className={`${styles.bannerCard}`}>
+                <a
+                  href="https://www.instagram.com/koturkafeifilm/?hl=en"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className={`${styles.bannerLink}`}
+                >
+                  <img src="./images/menu-page/img2.jpg" alt="Menu item 2" />
+                  <i className={`${styles.iconLink} bi bi-instagram`}></i>
+                </a>
+              </div>
+              <div className={`${styles.bannerCard}`}>
+                <a
+                  href="https://www.instagram.com/koturkafeifilm/?hl=en"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className={`${styles.bannerLink}`}
+                >
+                  <img src="./images/menu-page/img3.jpg" alt="Menu item 3" />
+                  <i className={`${styles.iconLink} bi bi-instagram`}></i>
+                </a>
+              </div>
             </div>
           </div>
         </div>
       </div>
       <div className="container">
-        <div className="row py-5 ">
-          <div className="col-12 gap-3  d-flex justify-content-center align-items-center">
+        <div className="row py-5  ">
+          <div className="col-12 d-flex justify-content-center align-items-center gap-3">
             <button className={`${styles.customBtn}`}>Коктели</button>
             <button className={`${styles.customBtn}`}>Кафе</button>
             <button className={`${styles.customBtn}`}>Мезе</button>
