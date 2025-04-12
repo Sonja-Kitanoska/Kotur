@@ -1,4 +1,7 @@
+import RoomReservationForm from "../../components/RoomReservationForm";
+import TableReservationForm from "../../components/TableReservationForm";
 import Testimonials from "../../components/Testimonials";
+import WorkApplicationForm from "../../components/WorkApplicationForm";
 import styles from "./AboutUsPage.module.css";
 
 const AboutUsPage = () => {
@@ -14,7 +17,7 @@ const AboutUsPage = () => {
 				</div>
 			</div>
 			{/* HISTORY */}
-			<div className="container pt-5">
+			<div className="container py-5">
 				<div className="text-center">
 					<img src="/images/landingPageImages/black-spoon.png" alt="spoon" />
 				</div>
@@ -82,7 +85,7 @@ const AboutUsPage = () => {
 					<img
 						src="/images/AboutUsImages/aboutUsCocktail.png"
 						alt="Cocktail catering"
-						className="w-100"
+						className="w-100 h-100"
 					/>
 				</div>
 
@@ -103,6 +106,11 @@ const AboutUsPage = () => {
 				</div>
 			</div>
 
+			{/* TABLE RESERVATION FORM */}
+			<div className={styles.tableReservationWrapper}>
+				<TableReservationForm />
+			</div>
+
 			{/* RENTING ROOM */}
 			<div
 				style={{ backgroundColor: "#595D58" }}
@@ -116,7 +124,6 @@ const AboutUsPage = () => {
 						sed odio nec aliquet eu proin mauris et.
 					</p>
 				</div>
-
 				<div className={`${styles.rentImgContainer} 50-vh`}>
 					<img
 						src="/images/AboutUsImages/Video.png"
@@ -124,6 +131,49 @@ const AboutUsPage = () => {
 						className="w-100"
 					/>
 				</div>
+			</div>
+			{/* ROOM RESERVATION FORM */}
+			<div className={styles.tableReservationWrapper}>
+				<RoomReservationForm />
+			</div>
+			{/* KOTUR VRABOTUVA */}
+
+			<div className="container py-3">
+				<h2 className="text-center mb-5">Стани дел од тимот</h2>
+				<div className="row justify-content-evenly">
+					<div className="col-md-6">
+						<img
+							src="/images/AboutUsImages/Kotur vrabotuva 1.png"
+							alt="Kotur vrabotuva"
+							className="w-100 h-100"
+						/>
+					</div>
+					<div className="col-md-5 py-3 d-flex flex-column justify-content-center">
+						<h3 className="py-2">Котур вработува</h3>
+						<p className="fst-italic">
+							auctor sit iaculis in arcu. Vulputate nulla lobortis mauris eget
+							sit. Nulla scelerisque scelerisque congue ac consequat, aliquam
+							molestie lectus eu. Congue iaculis integer curabitur semper sit
+							nunc. auctor sit iaculis in arcu. Vulputate nulla lobortis mauris
+							eget sit. Nulla scelerisque scelerisque congue ac consequat,
+							aliquam molestie lectus eu. Congue iaculis integer curabitur
+							semper sit nunc.
+						</p>
+						<a href="#workApplication">
+							<button
+								className="btn fw-bold px-5"
+								style={{ backgroundColor: "#9C9F98" }}
+							>
+								Аплицирај веднаш
+							</button>
+						</a>
+					</div>
+				</div>
+			</div>
+
+			{/* WORK APPLICATION FORM */}
+			<div className={styles.tableReservationWrapper}>
+				<WorkApplicationForm />
 			</div>
 			<Testimonials />
 		</div>
