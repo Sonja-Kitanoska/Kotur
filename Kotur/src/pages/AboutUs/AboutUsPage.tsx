@@ -13,12 +13,15 @@ const AboutUsPage = () => {
 					/>
 				</div>
 			</div>
-
 			{/* HISTORY */}
 			<div className="container pt-5">
+				<div className="text-center">
+					<img src="/images/landingPageImages/black-spoon.png" alt="spoon" />
+				</div>
 				<h2 className="mb-4 text-center">
 					Услужуваме клиенти повеќе од 10 години
 				</h2>
+
 				<div>
 					<div className="row">
 						<div className="col-md-5">
@@ -70,6 +73,32 @@ const AboutUsPage = () => {
 								</div>
 							</div>
 						</div>
+					</div>
+				</div>
+			</div>
+			{/* COCKTAIL CATERING */}
+			<div className="row m-0">
+				<div className="col-md-6 p-0">
+					<img
+						src="/images/AboutUsImages/aboutUsCocktail.png"
+						alt="Cocktail catering"
+						className="w-100"
+					/>
+				</div>
+
+				<div
+					className="col-md-6 text-white p-3 d-flex flex-column justify-content-center"
+					style={{ backgroundColor: "#5A5C57" }}
+				>
+					<div className="p-md-5">
+						<h3>Коктел кетеринг</h3>
+						<p>
+							Коктел кетеринг Lorem ipsum dolor sit amet, consectetur adipiscing
+							elit auctor sit . auctor sit iaculis in arcu. Vulputate nulla
+							lobortis mauris eget sit. Nulla scelerisque scelerisque congue ac
+							consequat, aliquam molestie lectus eu. Congue iaculis integer
+							curabitur semper sit nunc.
+						</p>
 					</div>
 				</div>
 			</div>
