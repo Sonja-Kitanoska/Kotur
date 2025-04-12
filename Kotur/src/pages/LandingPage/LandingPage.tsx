@@ -1,3 +1,4 @@
+import Services from "../../components/Services";
 import Testimonials from "../../components/Testimonials";
 import styles from "./LandingPage.module.css";
 const LandingPage = () => {
@@ -11,6 +12,10 @@ const LandingPage = () => {
 					/>
 				</div>
 			</div>
+
+			{/* SERVICES */}
+
+			<Services />
 
 			{/* RECOMMENDATION SECTION */}
 			<div className={styles.recommendation}>

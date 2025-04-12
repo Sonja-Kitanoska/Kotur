@@ -47,6 +47,17 @@
 	font-weight: semibold;
 }
 
+.serviceImgWrapper {
+	height: 300px;
+}
+
+a:focus,
+a:active,
+a:hover {
+	text-decoration: none;
+	color: inherit;
+}
+
 @keyframes rotate360 {
 	0% {
 		transform: translate(-50%, -50%) rotate(0deg);
@@ -67,6 +78,12 @@
 		width: 150px;
 		height: 150px;
 		left: 60%;
+	}
+}
+
+@media (min-width: 375px) and (max-width: 1024px) {
+	.serviceImgWrapper {
+		height: 350px;
 	}
 }
 
