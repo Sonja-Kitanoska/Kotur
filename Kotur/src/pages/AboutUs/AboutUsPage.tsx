@@ -1,3 +1,4 @@
+import TableReservationForm from "../../components/TableReservationForm";
 import Testimonials from "../../components/Testimonials";
 import styles from "./AboutUsPage.module.css";
 
@@ -14,7 +15,7 @@ const AboutUsPage = () => {
 				</div>
 			</div>
 			{/* HISTORY */}
-			<div className="container pt-5">
+			<div className="container p-5">
 				<div className="text-center">
 					<img src="/images/landingPageImages/black-spoon.png" alt="spoon" />
 				</div>
@@ -101,6 +102,11 @@ const AboutUsPage = () => {
 						</p>
 					</div>
 				</div>
+			</div>
+
+			{/* TABLE RESERVATION FORM */}
+			<div className={styles.tableReservationWrapper}>
+				<TableReservationForm />
 			</div>
 
 			{/* RENTING ROOM */}
