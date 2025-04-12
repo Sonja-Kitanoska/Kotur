@@ -181,7 +181,7 @@ const GalleryPage = () => {
         </div>
       </div>
       <button
-        className={`${styles.customBtn}btn d-flex align-items-center justify-content-center mx-auto my-5`}
+        className={`${styles.customBtn} d-flex align-items-center justify-content-center mx-auto my-5`}
       >
         Види повеќе
       </button>
