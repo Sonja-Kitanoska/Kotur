@@ -19,6 +19,10 @@
 	height: 130px;
 }
 
+.whiteBorder {
+	border-left: 1px solid #fafafa;
+}
+
 @media (min-width: 1000px) {
 	.circularText {
 		width: 160px;
