@@ -16,7 +16,7 @@ const AboutUsPage = () => {
 				</div>
 			</div>
 			{/* HISTORY */}
-			<div className="container p-5">
+			<div className="container py-5">
 				<div className="text-center">
 					<img src="/images/landingPageImages/black-spoon.png" alt="spoon" />
 				</div>
@@ -84,7 +84,7 @@ const AboutUsPage = () => {
 					<img
 						src="/images/AboutUsImages/aboutUsCocktail.png"
 						alt="Cocktail catering"
-						className="w-100"
+						className="w-100 h-100"
 					/>
 				</div>
 
