@@ -1,10 +1,10 @@
 const Footer = () => {
 	return (
 		<div
-			className="text-white text-center p-4"
+			className="text-white text-center py-5"
 			style={{ backgroundColor: "#040404" }}
 		>
-			<div className="footer">
+			<div className="footer row m-0" style={{ backgroundColor: "#040404" }}>
 				<div className="col-12 col-md-4 order-md-2">
 					<h4 style={{ color: "#C0C6BA", fontSize: "32px" }} className="mb-4">
 						Котур
@@ -61,7 +61,7 @@ const Footer = () => {
 					</a>
 				</div>
 			</div>
-			<p className="color-lightgray mt-3">
+			<p className="color-lightgray mt-3 mb-0">
 				{" "}
 				{new Date().getFullYear()} Котур. All Rights reserved.
 			</p>
