@@ -1,0 +1,21 @@
+.eventsHeroImage {
+	background-image: url("/images/EventsImages/Layer 1.png");
+	height: 50vh;
+	width: 100%;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: contain;
+	position: relative;
+}
+
+@media (min-width: 769px) {
+	.eventsHeroImage {
+		height: 100vh;
+	}
+}
+
+@media (min-width: 1000px) {
+	.eventsHeroImage {
+		height: 80vh;
+	}
+}
