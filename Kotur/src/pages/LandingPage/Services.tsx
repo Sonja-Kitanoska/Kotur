@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import styles from "../pages/LandingPage/LandingPage.module.css";
+import styles from "./LandingPage.module.css";
 
 const Services = () => {
   return (

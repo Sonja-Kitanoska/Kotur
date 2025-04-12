@@ -115,3 +115,38 @@ a button:hover {
     left: 65%;
   }
 }
+
+/* future events cards */
+.scrollContainer {
+  display: flex;
+  gap: 1rem;
+  overflow-x: auto;
+  overflow-y: hidden;
+  white-space: nowrap;
+  scroll-behavior: smooth;
+  scrollbar-width: none;
+}
+
+.scrollContainer::-webkit-scrollbar {
+  display: none;
+}
+
+.image {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+.card {
+  width: 100%;
+  height: 400px;
+  padding: 20px;
+  background-color: black;
+  object-fit: cover;
+  scroll-snap-align: start;
+}
+
+.scrollContainer a {
+  text-decoration: none;
+  color: inherit;
+  display: inline;
+}
