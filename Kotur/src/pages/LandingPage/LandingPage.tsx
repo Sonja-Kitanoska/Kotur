@@ -13,7 +13,7 @@ const LandingPage = () => {
           />
         </div>
       </div>
-      <div className={`container-fluid ${styles.bgDark} my-5 `}>
+      <div className={`container-fluid my-5 `}>
         <div className="row text-white ">
           <FutureEventsCard />
         </div>
