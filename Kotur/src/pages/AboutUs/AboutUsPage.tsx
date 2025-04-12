@@ -102,6 +102,29 @@ const AboutUsPage = () => {
 					</div>
 				</div>
 			</div>
+
+			{/* RENTING ROOM */}
+			<div
+				style={{ backgroundColor: "#595D58" }}
+				className={`${styles.rentRoomDiv} text-white text-center py-4`}
+			>
+				<div className="container">
+					<h2>Изнајмување на сала</h2>
+					<p>
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quis
+						pharetra adipiscing ultrices vulputate posuere tristique. In <br />{" "}
+						sed odio nec aliquet eu proin mauris et.
+					</p>
+				</div>
+
+				<div className={`${styles.rentImgContainer} 50-vh`}>
+					<img
+						src="/images/AboutUsImages/Video.png"
+						alt="Renting room"
+						className="w-100"
+					/>
+				</div>
+			</div>
 			<Testimonials />
 		</div>
 	);

@@ -23,6 +23,16 @@
 	border-left: 1px solid #fafafa;
 }
 
+.rentImgContainer {
+	padding: 20px;
+}
+
+@media (min-width: 426px) {
+	.rentImgContainer {
+		padding-inline: 100px;
+	}
+}
+
 @media (min-width: 1000px) {
 	.circularText {
 		width: 160px;
