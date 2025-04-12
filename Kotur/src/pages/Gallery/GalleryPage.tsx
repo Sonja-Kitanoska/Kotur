@@ -180,7 +180,9 @@ const GalleryPage = () => {
           </div>
         </div>
       </div>
-      <button className="btn btn-light btn-lg fs-3 px-lg-5 py-lg-3  d-flex align-items-center justify-content-center mx-auto my-5">
+      <button
+        className={`${styles.customBtn} d-flex align-items-center justify-content-center mx-auto my-5`}
+      >
         Види повеќе
       </button>
     </div>

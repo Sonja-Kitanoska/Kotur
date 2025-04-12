@@ -1,17 +1,29 @@
 .menuBanner {
   background-image: url("/images/menu-page/bg-img.png");
-  height: calc(80vh - 84px);
-  width: 100%;
+  background-size: cover;
+  background-position: center;
+  min-height: 60vh;
+  display: flex;
+  align-items: center;
+  padding: 2rem 1rem;
+  flex-direction: column;
 }
 
+@media (max-width: 768px) {
+  .menuBanner {
+    height: calc(100vh - 64px);
+  }
+}
 .bannerCard {
   position: relative;
-  overflow: hidden;
-  height: 350px;
-  width: 250px;
+  height: 250px;
+  width: 100%;
+  max-width: 220px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
   border: 2px solid #f5efdb;
+  overflow: hidden;
   text-decoration: none;
+  margin: 0 1rem;
 }
 
 .bannerCard img {
@@ -46,14 +58,13 @@
 .customBtn {
   background-color: transparent;
   color: #000;
-  padding: 0.5rem 2rem;
+  padding: 10px 40px;
   font-size: 1rem;
   font-weight: bold;
   text-decoration: none;
   transition: background-color 0.3s ease, color 0.3s ease;
 }
 .listedDrinks {
-  margin-top: 2rem;
   width: calc(50% - 1rem);
 }
 .listedDrinks img {
@@ -66,8 +77,7 @@
   padding: 40px 40px;
   background-color: #242424;
   color: #c0c6ba;
-  margin-top: 2rem;
-  margin-bottom: 4rem;
+  margin-bottom: 10px;
   width: 80%;
   box-sizing: border-box;
 }

@@ -48,3 +48,9 @@
 button:hover {
   background-color: hsl(90, 10%, 65%) !important;
 }
+
+.customBtn {
+  border: none;
+  padding: 12px 80px;
+  font-weight: bold;
+}
