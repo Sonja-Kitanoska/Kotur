@@ -1,0 +1,41 @@
+.menuBanner {
+  background-image: url("/images/menu-page/bg-img.png");
+  height: calc(80vh - 84px);
+  width: 100%;
+}
+
+.card {
+  position: relative;
+  overflow: hidden;
+  height: 350px;
+  width: 250px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  border: 2px solid #f5efdb;
+  text-decoration: none;
+}
+
+.card img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+.iconLink {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 2rem;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  z-index: 2;
+}
+
+.card:hover .iconLink {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.card:hover {
+  cursor: pointer;
+}
