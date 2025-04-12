@@ -70,18 +70,6 @@ const Navbar = () => {
 						>
 							Настани
 						</NavLink>
-						<ul className="dropdown-menu">
-							<li>
-								<Link className="dropdown-item" to="/">
-									Ѕирни
-								</Link>
-							</li>
-							<li>
-								<Link className="dropdown-item" to="/">
-									Останати
-								</Link>
-							</li>
-						</ul>
 					</div>
 					<NavLink
 						to="/gallery"

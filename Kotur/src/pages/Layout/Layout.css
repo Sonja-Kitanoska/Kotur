@@ -21,31 +21,6 @@
 	text-decoration-thickness: 2px;
 }
 
-/* Dropdown */
-.dropdown-menu {
-	display: none;
-	opacity: 0;
-	transition: opacity 0.3s ease;
-	position: absolute;
-	left: 50%;
-	transform: translateX(-50%);
-}
-
-.dropdown:hover .dropdown-menu {
-	display: block;
-	opacity: 1;
-}
-
-.dropdown-menu .dropdown-item {
-	padding: 8px 16px;
-	color: #444444;
-	text-decoration: none;
-}
-
-.dropdown-item:hover {
-	background-color: #f0f0f0;
-}
-
 /* Menu icon */
 
 .menu-icon {
