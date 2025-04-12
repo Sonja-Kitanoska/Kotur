@@ -60,7 +60,7 @@ a:hover {
 
 a button:hover {
   color: black !important;
-  background-color: rgb(213, 216, 211) !important;
+  background-color: hsl(90, 10%, 65%) !important;
 }
 @keyframes rotate360 {
   0% {

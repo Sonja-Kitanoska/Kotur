@@ -33,7 +33,7 @@
   display: none;
 }
 button:hover {
-  background-color: rgb(213, 216, 211);
+  background-color: hsl(90, 10%, 65%) !important;
 }
 
 .customBtn {

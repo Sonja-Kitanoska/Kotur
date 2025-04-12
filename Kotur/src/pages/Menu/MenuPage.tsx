@@ -66,33 +66,93 @@ const MenuPage = () => {
           <div className="col-lg-8 col-12 d-flex flex-wrap justify-content-center gap-4">
             <div className={`${styles.listedDrinks}`}>
               <img src="./images/menu-page/1.png" alt="Cocktail 1" />
+              <div className={`${styles.hoverDrink}`}>
+                <p>Lorem, ipsum.</p>
+                <p>Lorem, ipsum.</p>
+                <p>Lorem, ipsum.</p>
+                <p>Lorem, ipsum.</p>
+              </div>
             </div>
             <div className={`${styles.listedDrinks}`}>
               <img src="./images/menu-page/2.png" alt="Cocktail 1" />
+              <div className={`${styles.hoverDrink}`}>
+                <p>Lorem, ipsum.</p>
+                <p>Lorem, ipsum.</p>
+                <p>Lorem, ipsum.</p>
+                <p>Lorem, ipsum.</p>
+              </div>
             </div>
             <div className={`${styles.listedDrinks}`}>
               <img src="./images/menu-page/3.png" alt="Cocktail 1" />
+              <div className={`${styles.hoverDrink}`}>
+                <p>Lorem, ipsum.</p>
+                <p>Lorem, ipsum.</p>
+                <p>Lorem, ipsum.</p>
+                <p>Lorem, ipsum.</p>
+              </div>
             </div>
             <div className={`${styles.listedDrinks}`}>
               <img src="./images/menu-page/4.png" alt="Cocktail 1" />
+              <div className={`${styles.hoverDrink}`}>
+                <p>Lorem, ipsum.</p>
+                <p>Lorem, ipsum.</p>
+                <p>Lorem, ipsum.</p>
+                <p>Lorem, ipsum.</p>
+              </div>
             </div>
             <div className={`${styles.listedDrinks}`}>
               <img src="./images/menu-page/5.png" alt="Cocktail 1" />
+              <div className={`${styles.hoverDrink}`}>
+                <p>Lorem, ipsum.</p>
+                <p>Lorem, ipsum.</p>
+                <p>Lorem, ipsum.</p>
+                <p>Lorem, ipsum.</p>
+              </div>
             </div>
             <div className={`${styles.listedDrinks}`}>
               <img src="./images/menu-page/6.png" alt="Cocktail 1" />
+              <div className={`${styles.hoverDrink}`}>
+                <p>Lorem, ipsum.</p>
+                <p>Lorem, ipsum.</p>
+                <p>Lorem, ipsum.</p>
+                <p>Lorem, ipsum.</p>
+              </div>
             </div>
             <div className={`${styles.listedDrinks}`}>
               <img src="./images/menu-page/7.png" alt="Cocktail 1" />
+              <div className={`${styles.hoverDrink}`}>
+                <p>Lorem, ipsum.</p>
+                <p>Lorem, ipsum.</p>
+                <p>Lorem, ipsum.</p>
+                <p>Lorem, ipsum.</p>
+              </div>
             </div>
             <div className={`${styles.listedDrinks}`}>
               <img src="./images/menu-page/8.png" alt="Cocktail 1" />
+              <div className={`${styles.hoverDrink}`}>
+                <p>Lorem, ipsum.</p>
+                <p>Lorem, ipsum.</p>
+                <p>Lorem, ipsum.</p>
+                <p>Lorem, ipsum.</p>
+              </div>
             </div>
             <div className={`${styles.listedDrinks}`}>
               <img src="./images/menu-page/9.png" alt="Cocktail 1" />
+              <div className={`${styles.hoverDrink}`}>
+                <p>Lorem, ipsum.</p>
+                <p>Lorem, ipsum.</p>
+                <p>Lorem, ipsum.</p>
+                <p>Lorem, ipsum.</p>
+              </div>
             </div>
             <div className={`${styles.listedDrinks}`}>
               <img src="./images/menu-page/10.png" alt="Cocktail 1" />
+              <div className={`${styles.hoverDrink}`}>
+                <p>Lorem, ipsum.</p>
+                <p>Lorem, ipsum.</p>
+                <p>Lorem, ipsum.</p>
+                <p>Lorem, ipsum.</p>
+              </div>
             </div>
           </div>
           <div className="col-lg-4 col-12 d-flex flex-column align-items-center mt-4 mt-lg-0">
