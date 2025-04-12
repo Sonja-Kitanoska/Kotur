@@ -1,12 +1,12 @@
 import styles from "../pages/AboutUs/AboutUsPage.module.css";
 
-const TableReservationForm = () => {
+const RoomReservationForm = () => {
 	return (
 		<div className="bg-black py-5">
 			<div className="text-center">
 				<p className="text-white mb-0">Резервации</p>
 				<img src="/images/footer/spoon.png" alt="spoon" />
-				<h2 style={{ color: "#C0C6BA" }}>Резервирај Коктел Шанк</h2>
+				<h2 style={{ color: "#C0C6BA" }}>Резервирај Сала</h2>
 			</div>
 			<form className="p-2">
 				<div className="row m-0 text-white">
@@ -98,4 +98,4 @@ const TableReservationForm = () => {
 	);
 };
 
-export default TableReservationForm;
+export default RoomReservationForm;

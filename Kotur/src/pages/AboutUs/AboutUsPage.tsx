@@ -1,3 +1,4 @@
+import RoomReservationForm from "../../components/RoomReservationForm";
 import TableReservationForm from "../../components/TableReservationForm";
 import Testimonials from "../../components/Testimonials";
 import styles from "./AboutUsPage.module.css";
@@ -122,7 +123,6 @@ const AboutUsPage = () => {
 						sed odio nec aliquet eu proin mauris et.
 					</p>
 				</div>
-
 				<div className={`${styles.rentImgContainer} 50-vh`}>
 					<img
 						src="/images/AboutUsImages/Video.png"
@@ -130,6 +130,10 @@ const AboutUsPage = () => {
 						className="w-100"
 					/>
 				</div>
+			</div>
+			{/* ROOM RESERVATION FORM */}
+			<div className={styles.tableReservationWrapper}>
+				<RoomReservationForm />
 			</div>
 			<Testimonials />
 		</div>
