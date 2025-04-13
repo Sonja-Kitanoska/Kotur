@@ -1,5 +1,19 @@
+import { useEffect, useState } from "react";
 import styles from "./MenuPage.module.css";
 const MenuPage = () => {
+  const [data, setData] = useState<any>(undefined);
+  useEffect(() => {
+    fetch("https://b508-46-217-233-171.ngrok-free.app/api/menu/cocktails", {
+      headers: {
+        "ngrok-skip-browser-warning": true,
+        Accept: "application/json",
+        "Content-Type": "application/json",
+      } as any,
+    })
+      .then((response) => response.json())
+      .then((data) => setData(data));
+  }, []);
+
   return (
     <>
       <div className={`${styles.menuBanner}`}>
@@ -66,148 +80,23 @@ const MenuPage = () => {
         <h2 className="text-center pb-5">Коктели</h2>
         <div className="row ">
           <div className="col-lg-8 col-12 d-flex flex-wrap justify-content-center gap-4">
-            <label className={`${styles.listedDrinks}`}>
-              <input
-                type="checkbox"
-                className={`${styles.hoverToggle}`}
-                hidden
-              />
-              <img src="./images/menu-page/1.png" alt="Cocktail 1" />
-              <div className={`${styles.hoverDrink}`}>
-                <p>Lorem, ipsum.</p>
-                <p>Lorem, ipsum.</p>
-                <p>Lorem, ipsum.</p>
-                <p>Lorem, ipsum.</p>
-              </div>
-            </label>
-            <label className={`${styles.listedDrinks}`}>
-              <input
-                type="checkbox"
-                className={`${styles.hoverToggle}`}
-                hidden
-              />
-              <img src="./images/menu-page/2.png" alt="Cocktail 1" />
-              <div className={`${styles.hoverDrink}`}>
-                <p>Lorem, ipsum.</p>
-                <p>Lorem, ipsum.</p>
-                <p>Lorem, ipsum.</p>
-                <p>Lorem, ipsum.</p>
-              </div>
-            </label>
-            <label className={`${styles.listedDrinks}`}>
-              <input
-                type="checkbox"
-                className={`${styles.hoverToggle}`}
-                hidden
-              />
-              <img src="./images/menu-page/3.png" alt="Cocktail 1" />
-              <div className={`${styles.hoverDrink}`}>
-                <p>Lorem, ipsum.</p>
-                <p>Lorem, ipsum.</p>
-                <p>Lorem, ipsum.</p>
-                <p>Lorem, ipsum.</p>
-              </div>
-            </label>
-            <label className={`${styles.listedDrinks}`}>
-              <input
-                type="checkbox"
-                className={`${styles.hoverToggle}`}
-                hidden
-              />
-              <img src="./images/menu-page/4.png" alt="Cocktail 1" />
-              <div className={`${styles.hoverDrink}`}>
-                <p>Lorem, ipsum.</p>
-                <p>Lorem, ipsum.</p>
-                <p>Lorem, ipsum.</p>
-                <p>Lorem, ipsum.</p>
-              </div>
-            </label>
-            <label className={`${styles.listedDrinks}`}>
-              <input
-                type="checkbox"
-                className={`${styles.hoverToggle}`}
-                hidden
-              />
-              <img src="./images/menu-page/5.png" alt="Cocktail 1" />
-              <div className={`${styles.hoverDrink}`}>
-                <p>Lorem, ipsum.</p>
-                <p>Lorem, ipsum.</p>
-                <p>Lorem, ipsum.</p>
-                <p>Lorem, ipsum.</p>
-              </div>
-            </label>
-            <label className={`${styles.listedDrinks}`}>
-              <input
-                type="checkbox"
-                className={`${styles.hoverToggle}`}
-                hidden
-              />
-
-              <img src="./images/menu-page/6.png" alt="Cocktail 1" />
-
-              <div className={`${styles.hoverDrink}`}>
-                <p>Lorem, ipsum.</p>
-                <p>Lorem, ipsum.</p>
-                <p>Lorem, ipsum.</p>
-                <p>Lorem, ipsum.</p>
-              </div>
-            </label>
-            <label className={`${styles.listedDrinks}`}>
-              <input
-                type="checkbox"
-                className={`${styles.hoverToggle}`}
-                hidden
-              />
-              <img src="./images/menu-page/7.png" alt="Cocktail 1" />
-              <div className={`${styles.hoverDrink}`}>
-                <p>Lorem, ipsum.</p>
-                <p>Lorem, ipsum.</p>
-                <p>Lorem, ipsum.</p>
-                <p>Lorem, ipsum.</p>
-              </div>
-            </label>
-            <label className={`${styles.listedDrinks}`}>
-              <input
-                type="checkbox"
-                className={`${styles.hoverToggle}`}
-                hidden
-              />
-              <img src="./images/menu-page/8.png" alt="Cocktail 1" />
-              <div className={`${styles.hoverDrink}`}>
-                <p>Lorem, ipsum.</p>
-                <p>Lorem, ipsum.</p>
-                <p>Lorem, ipsum.</p>
-                <p>Lorem, ipsum.</p>
-              </div>
-            </label>
-            <label className={`${styles.listedDrinks}`}>
-              <input
-                type="checkbox"
-                className={`${styles.hoverToggle}`}
-                hidden
-              />
-              <img src="./images/menu-page/9.png" alt="Cocktail 1" />
-              <div className={`${styles.hoverDrink}`}>
-                <p>Lorem, ipsum.</p>
-                <p>Lorem, ipsum.</p>
-                <p>Lorem, ipsum.</p>
-                <p>Lorem, ipsum.</p>
-              </div>
-            </label>
-            <label className={`${styles.listedDrinks}`}>
-              <input
-                type="checkbox"
-                className={`${styles.hoverToggle}`}
-                hidden
-              />
-              <img src="./images/menu-page/10.png" alt="Cocktail 1" />
-              <div className={`${styles.hoverDrink}`}>
-                <p>Lorem, ipsum.</p>
-                <p>Lorem, ipsum.</p>
-                <p>Lorem, ipsum.</p>
-                <p>Lorem, ipsum.</p>
-              </div>
-            </label>
+            {data?.cocktails?.map((cocktail: any) => {
+              return (
+                <label key={cocktail.id} className={`${styles.listedDrinks}`}>
+                  <input
+                    type="checkbox"
+                    className={`${styles.hoverToggle}`}
+                    hidden
+                  />
+                  <img src="./images/menu-page/1.png" alt="Cocktail 1" />
+                  <div className={`${styles.hoverDrink}`}>
+                    {cocktail.ingredients.map((ingredient: any) => {
+                      return <p key={ingredient.id}>{ingredient}</p>;
+                    })}
+                  </div>
+                </label>
+              );
+            })}
           </div>
           <div className="col-lg-4 col-12 d-flex flex-column align-items-center mt-4 mt-lg-0">
             <div className={`${styles.popularCard}`}>
