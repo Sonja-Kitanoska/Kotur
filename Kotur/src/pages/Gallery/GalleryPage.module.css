@@ -27,6 +27,7 @@
   white-space: nowrap;
   scroll-behavior: smooth;
   scrollbar-width: none;
+  cursor: pointer;
 }
 
 .scrollContainer::-webkit-scrollbar {
