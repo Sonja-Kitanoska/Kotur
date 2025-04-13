@@ -15,7 +15,7 @@
 }
 
 .custom-underline {
-	text-decoration: underline;
+	text-decoration: underline !important;
 	text-decoration-color: #c0c6ba;
 	text-underline-offset: 15px;
 	text-decoration-thickness: 2px;
@@ -83,6 +83,9 @@
 	.navbar-collapse.show .nav-link {
 		text-decoration: none;
 		margin-bottom: 3px;
+	}
+	.custom-underline {
+		text-decoration: none !important;
 	}
 }
 
