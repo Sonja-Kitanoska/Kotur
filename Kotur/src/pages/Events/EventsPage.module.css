@@ -8,6 +8,47 @@
 	position: relative;
 }
 
+.monthNames {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: flex-start;
+	gap: 5px;
+}
+
+.flatButton {
+	border-radius: 0;
+	transition: background-color 0.3s ease;
+	background-color: #303234;
+	color: #dfdfdf;
+	padding-inline: 13px;
+}
+
+.flatButton:hover {
+	background-color: #fcfcfc !important;
+	color: #303234 !important;
+}
+
+.activeButton {
+	background-color: #fcfcfc !important;
+	color: #303234 !important;
+	font-weight: bold;
+}
+
+.findMoreBtn {
+	background-color: #303234;
+	color: #dfdfdf;
+	padding-inline: 10px;
+	border: 1px solid white;
+	border-radius: 2px;
+	font-size: 12px;
+}
+
+@media (min-width: 426px) {
+	.monthNames {
+		justify-content: flex-start;
+	}
+}
+
 @media (min-width: 769px) {
 	.eventsHeroImage {
 		height: 100vh;
