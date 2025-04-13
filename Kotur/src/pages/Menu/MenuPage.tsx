@@ -14,6 +14,7 @@ const MenuPage = () => {
       .then((data) => setData(data));
   }, []);
 
+  console.log(data);
   return (
     <>
       <div className={`${styles.menuBanner}`}>
@@ -91,7 +92,7 @@ const MenuPage = () => {
                   <img src="./images/menu-page/1.png" alt="Cocktail 1" />
                   <div className={`${styles.hoverDrink}`}>
                     {cocktail.ingredients.map((ingredient: any) => {
-                      return <p key={ingredient.id}>{ingredient}</p>;
+                      return <p key={crypto.randomUUID()}>{ingredient}</p>;
                     })}
                   </div>
                 </label>
@@ -104,33 +105,48 @@ const MenuPage = () => {
               <div className={`${styles.popularCardImg}`}>
                 <img src="./images/menu-page/1.png" alt="Popular 1" />
               </div>
-              <h6 className="text-center pt-4">Септември</h6>
-              <p
-                className={`${styles.popularCardText}  text-center pt-4 pb-2 fs-5`}
-              >
-                Summer Cocktails And Mocktails
-              </p>
-              <p className="lead text-start">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem
-                quo cumque deserunt nesciunt amet laborum fugiat perspiciatis
-                porro! Molestiae, pariatur.
-              </p>
+              {data?.popular?.map((p: any) => {
+                return (
+                  <h6 key={p.id} className="text-center pt-4">
+                    {p.month}
+                  </h6>
+                );
+              })}
+
+              {data?.popular?.map((p: any) => {
+                return (
+                  <p
+                    key={p.id}
+                    className={`${styles.popularCardText}  text-center pt-4 pb-2 fs-5`}
+                  >
+                    {p.title}{" "}
+                  </p>
+                );
+              })}
+              {data?.popular?.map((p: any) => {
+                return (
+                  <p key={p.id} className="lead text-start">
+                    {p.description}
+                  </p>
+                );
+              })}
             </div>
+
             <div className={`${styles.popularCard}`}>
               <h5 className="text-center pb-3 pt-5">Препорачуваме</h5>
               <div className={`${styles.popularCardImg}`}>
                 <img src="./images/menu-page/5.png" alt="Popular 1" />
               </div>
-              <h6 className="text-center pt-4">Септември</h6>
+              <h6 className="text-center pt-4">
+                {data?.recommendations[0]?.month}
+              </h6>
               <p
                 className={`${styles.popularCardText}  text-center pt-4 pb-2 fs-5`}
               >
-                Summer Cocktails And Mocktails
+                {data?.recommendations[0]?.title}
               </p>
               <p className="lead text-start">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem
-                quo cumque deserunt nesciunt amet laborum fugiat perspiciatis
-                porro! Molestiae, pariatur.
+                {data?.recommendations[0]?.description}
               </p>
             </div>
           </div>
