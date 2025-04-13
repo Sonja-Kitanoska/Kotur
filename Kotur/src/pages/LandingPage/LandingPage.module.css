@@ -116,6 +116,22 @@ a button:hover {
   }
 }
 
+/* future events banner */
+.futureFestivalImg {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  position: relative;
+}
+
+.topSpan {
+  color: rgb(66, 144, 108);
+}
+
+.bottomSpan {
+  color: #c0c6ba !important;
+}
+
 /* future events cards */
 .scrollContainer {
   display: flex;

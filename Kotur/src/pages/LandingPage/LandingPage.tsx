@@ -8,11 +8,53 @@ const LandingPage = () => {
       <div className={styles.hero}>
         <div>
           <img
-            src="./images/landingPageImages/landing-logo.png"
+            src="/images/landingPageImages/landing-logo.png"
             alt="Kotur logo"
           />
         </div>
       </div>
+      <div className="container-fluid">
+        <div className="row text-center   mt-5 mb-5">
+          <div className="col-12 col-md-6 bg-dark p-0">
+            <div className="row">
+              <div className="col-12 col-md-6 text-start">
+                <p className={`${styles.bottomSpan} mt-5 ps-4 fs-5 mb-0`}>
+                  12 ОКТ
+                </p>
+                <span className={`${styles.topSpan} fs-1 ps-5 `}>ЅИРНИ</span>
+                <div className="ms-md-5 ms-3 fs-1">
+                  <p className={`${styles.bottomSpan} text-center  mb-0`}>
+                    ФЕСТИ
+                  </p>
+                  <p className={`${styles.bottomSpan} text-center  mb-0`}>
+                    ВАЛ
+                  </p>
+                </div>
+              </div>
+              <div className="col-12 col-md-6 pe-md-4 text-center mt-4 mt-md-0">
+                <div>
+                  <img
+                    className={styles.futureFestivalImg}
+                    src="./images/landingPageImages/future-festival-logo.png"
+                    alt=""
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="col-md-6 col-12 p-0">
+            <div>
+              <img
+                className={styles.futureFestivalImg}
+                src="./images/landingPageImages/future-festival.jpg"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* futureevents cards */}
       <div className={`container-fluid my-5 `}>
         <div className="row text-white ">
           <FutureEventsCard />
