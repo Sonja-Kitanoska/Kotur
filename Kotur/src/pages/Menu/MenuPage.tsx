@@ -13,7 +13,9 @@ const MenuPage = () => {
                 dolor sit, amet consectetur adipisicing elit. Voluptas, id.
               </p>
             </div>
-            <div className="col-lg-7 col-12 d-flex justify-content-center gap-2    align-items-center  ">
+            <div
+              className={`${styles.wrapperCard} col-lg-7 col-12 d-flex justify-content-center gap-2 align-items-center `}
+            >
               <div className={`${styles.bannerCard}`}>
                 <a
                   href="https://www.instagram.com/koturkafeifilm/?hl=en"
@@ -53,7 +55,7 @@ const MenuPage = () => {
       </div>
       <div className="container">
         <div className="row py-5  ">
-          <div className="col-12 d-flex justify-content-center align-items-center gap-3">
+          <div className="col-6 mx-auto col-md-12 d-flex justify-content-center align-items-center gap-3 flex-wrap">
             <button className={`${styles.customBtn}`}>Коктели</button>
             <button className={`${styles.customBtn}`}>Кафе</button>
             <button className={`${styles.customBtn}`}>Мезе</button>
@@ -64,7 +66,12 @@ const MenuPage = () => {
         <h2 className="text-center pb-5">Коктели</h2>
         <div className="row ">
           <div className="col-lg-8 col-12 d-flex flex-wrap justify-content-center gap-4">
-            <div className={`${styles.listedDrinks}`}>
+            <label className={`${styles.listedDrinks}`}>
+              <input
+                type="checkbox"
+                className={`${styles.hoverToggle}`}
+                hidden
+              />
               <img src="./images/menu-page/1.png" alt="Cocktail 1" />
               <div className={`${styles.hoverDrink}`}>
                 <p>Lorem, ipsum.</p>
@@ -72,8 +79,13 @@ const MenuPage = () => {
                 <p>Lorem, ipsum.</p>
                 <p>Lorem, ipsum.</p>
               </div>
-            </div>
-            <div className={`${styles.listedDrinks}`}>
+            </label>
+            <label className={`${styles.listedDrinks}`}>
+              <input
+                type="checkbox"
+                className={`${styles.hoverToggle}`}
+                hidden
+              />
               <img src="./images/menu-page/2.png" alt="Cocktail 1" />
               <div className={`${styles.hoverDrink}`}>
                 <p>Lorem, ipsum.</p>
@@ -81,8 +93,13 @@ const MenuPage = () => {
                 <p>Lorem, ipsum.</p>
                 <p>Lorem, ipsum.</p>
               </div>
-            </div>
-            <div className={`${styles.listedDrinks}`}>
+            </label>
+            <label className={`${styles.listedDrinks}`}>
+              <input
+                type="checkbox"
+                className={`${styles.hoverToggle}`}
+                hidden
+              />
               <img src="./images/menu-page/3.png" alt="Cocktail 1" />
               <div className={`${styles.hoverDrink}`}>
                 <p>Lorem, ipsum.</p>
@@ -90,8 +107,13 @@ const MenuPage = () => {
                 <p>Lorem, ipsum.</p>
                 <p>Lorem, ipsum.</p>
               </div>
-            </div>
-            <div className={`${styles.listedDrinks}`}>
+            </label>
+            <label className={`${styles.listedDrinks}`}>
+              <input
+                type="checkbox"
+                className={`${styles.hoverToggle}`}
+                hidden
+              />
               <img src="./images/menu-page/4.png" alt="Cocktail 1" />
               <div className={`${styles.hoverDrink}`}>
                 <p>Lorem, ipsum.</p>
@@ -99,8 +121,13 @@ const MenuPage = () => {
                 <p>Lorem, ipsum.</p>
                 <p>Lorem, ipsum.</p>
               </div>
-            </div>
-            <div className={`${styles.listedDrinks}`}>
+            </label>
+            <label className={`${styles.listedDrinks}`}>
+              <input
+                type="checkbox"
+                className={`${styles.hoverToggle}`}
+                hidden
+              />
               <img src="./images/menu-page/5.png" alt="Cocktail 1" />
               <div className={`${styles.hoverDrink}`}>
                 <p>Lorem, ipsum.</p>
@@ -108,17 +135,29 @@ const MenuPage = () => {
                 <p>Lorem, ipsum.</p>
                 <p>Lorem, ipsum.</p>
               </div>
-            </div>
-            <div className={`${styles.listedDrinks}`}>
+            </label>
+            <label className={`${styles.listedDrinks}`}>
+              <input
+                type="checkbox"
+                className={`${styles.hoverToggle}`}
+                hidden
+              />
+
               <img src="./images/menu-page/6.png" alt="Cocktail 1" />
+
               <div className={`${styles.hoverDrink}`}>
                 <p>Lorem, ipsum.</p>
                 <p>Lorem, ipsum.</p>
                 <p>Lorem, ipsum.</p>
                 <p>Lorem, ipsum.</p>
               </div>
-            </div>
-            <div className={`${styles.listedDrinks}`}>
+            </label>
+            <label className={`${styles.listedDrinks}`}>
+              <input
+                type="checkbox"
+                className={`${styles.hoverToggle}`}
+                hidden
+              />
               <img src="./images/menu-page/7.png" alt="Cocktail 1" />
               <div className={`${styles.hoverDrink}`}>
                 <p>Lorem, ipsum.</p>
@@ -126,8 +165,13 @@ const MenuPage = () => {
                 <p>Lorem, ipsum.</p>
                 <p>Lorem, ipsum.</p>
               </div>
-            </div>
-            <div className={`${styles.listedDrinks}`}>
+            </label>
+            <label className={`${styles.listedDrinks}`}>
+              <input
+                type="checkbox"
+                className={`${styles.hoverToggle}`}
+                hidden
+              />
               <img src="./images/menu-page/8.png" alt="Cocktail 1" />
               <div className={`${styles.hoverDrink}`}>
                 <p>Lorem, ipsum.</p>
@@ -135,8 +179,13 @@ const MenuPage = () => {
                 <p>Lorem, ipsum.</p>
                 <p>Lorem, ipsum.</p>
               </div>
-            </div>
-            <div className={`${styles.listedDrinks}`}>
+            </label>
+            <label className={`${styles.listedDrinks}`}>
+              <input
+                type="checkbox"
+                className={`${styles.hoverToggle}`}
+                hidden
+              />
               <img src="./images/menu-page/9.png" alt="Cocktail 1" />
               <div className={`${styles.hoverDrink}`}>
                 <p>Lorem, ipsum.</p>
@@ -144,8 +193,13 @@ const MenuPage = () => {
                 <p>Lorem, ipsum.</p>
                 <p>Lorem, ipsum.</p>
               </div>
-            </div>
-            <div className={`${styles.listedDrinks}`}>
+            </label>
+            <label className={`${styles.listedDrinks}`}>
+              <input
+                type="checkbox"
+                className={`${styles.hoverToggle}`}
+                hidden
+              />
               <img src="./images/menu-page/10.png" alt="Cocktail 1" />
               <div className={`${styles.hoverDrink}`}>
                 <p>Lorem, ipsum.</p>
@@ -153,7 +207,7 @@ const MenuPage = () => {
                 <p>Lorem, ipsum.</p>
                 <p>Lorem, ipsum.</p>
               </div>
-            </div>
+            </label>
           </div>
           <div className="col-lg-4 col-12 d-flex flex-column align-items-center mt-4 mt-lg-0">
             <div className={`${styles.popularCard}`}>
