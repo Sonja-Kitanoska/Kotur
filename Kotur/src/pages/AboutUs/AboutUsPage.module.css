@@ -44,6 +44,10 @@ input[type="time"]::-webkit-calendar-picker-indicator {
 	cursor: pointer;
 }
 
+.selectColor {
+	color: #aaaaaa;
+}
+
 @media (min-width: 426px) {
 	.rentImgContainer {
 		padding-inline: 100px;

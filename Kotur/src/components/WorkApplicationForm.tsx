@@ -26,13 +26,13 @@ const WorkApplicationForm = () => {
 						<label htmlFor="position" className="mb-1">
 							Позиција
 						</label>
-						<input
-							type="text"
+						<select
 							id="position"
-							name="porsition"
-							placeholder="Петко Петкоски"
-							className={`${styles.customInput} bg-black border border-white form-control`}
-						/>
+							name="position"
+							className={`${styles.selectColor} border border-white bg-black form-select`}
+						>
+							<option selected>Шанкер</option>
+						</select>
 					</div>
 					<div className="col-md-6 mb-4">
 						<label htmlFor="phone" className="mb-1">
