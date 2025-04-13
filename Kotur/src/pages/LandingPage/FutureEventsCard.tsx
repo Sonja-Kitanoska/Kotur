@@ -7,7 +7,7 @@ const FutureEventsCard = () => {
         <div className={`${styles.scrollContainer} h-100`}>
           <div className="col-md-4 col-12  h-100 ">
             <div className={`${styles.card} h-100`}>
-              <Link to="/">
+              <Link to="/events">
                 <img
                   src="/images/gallery-page/img1.jpg"
                   alt="Gallery Image 1"
@@ -28,7 +28,7 @@ const FutureEventsCard = () => {
               className={`${styles.card} h-100`}
               style={{ backgroundColor: "#98A190" }}
             >
-              <Link to="/">
+              <Link to="/events">
                 <img
                   src="/images/gallery-page/img2.jpg"
                   alt="Gallery Image 1"
@@ -46,7 +46,7 @@ const FutureEventsCard = () => {
           </div>
           <div className="col-md-4 col-12  h-100 ">
             <div className={`${styles.card} h-100`}>
-              <Link to="/">
+              <Link to="/events">
                 <img
                   src="/images/gallery-page/img7.jpg"
                   alt="Gallery Image 1"
@@ -67,7 +67,7 @@ const FutureEventsCard = () => {
               className={`${styles.card} h-100`}
               style={{ backgroundColor: "#98A190" }}
             >
-              <Link to="/">
+              <Link to="/events">
                 <img
                   src="/images/gallery-page/img4.jpg"
                   alt="Gallery Image 1"
