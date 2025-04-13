@@ -35,7 +35,23 @@
 }
 
 .customInput {
+	color: white;
+}
+
+.customInput:focus {
+	color: white;
+	background-color: black;
+}
+
+input[type="date"] {
 	color: #aaaaaa;
+	background-color: black;
+}
+
+input[type="date"]:focus,
+input[type="time"]:focus {
+	color: white;
+	background-color: black;
 }
 
 input[type="date"]::-webkit-calendar-picker-indicator,
