@@ -140,7 +140,7 @@ const TableReservationForm = () => {
 						</label>
 						<input
 							onChange={handleChange}
-							value={setInputValues.message}
+							value={inputValues.message}
 							type="text"
 							id="message"
 							name="message"
